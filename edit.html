@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <link rel="stylesheet" href="styles/pages.css" />
+    <link rel="stylesheet" href="styles/todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="root" class="wrap">
+      <!-- Edit -->
+      <div class="content-wrapper">
+        <div class="todo">
+          <!-- START: Header 컴포넌트 -->
+          <header>
+            <h2 class="todo__title">What’s the Plan for Today?</h2>
+          </header>
+          <!-- END: Header 컴포넌트 -->
+          <main>
+            <!-- START: Form컴포넌트 -->
+            <section>
+              <div class="form">
+                <form action="/create" method="post">
+                  <div class="form-wrap">
+                    <input
+                      type="text"
+                      class="form__element"
+                      name="title"
+                      value="할일"
+                      placeholder="Edit a todo"
+                    />
+                    <button class="form__button update" type="submit">
+                      Update
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </section>
+            <!-- END: Form컴포넌트 -->
+          </main>
+        </div>
+      </div>
+      <!-- // Edit -->
+    </div>
+  </body>
+</html>
