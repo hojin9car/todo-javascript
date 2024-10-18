@@ -14,6 +14,7 @@
   <body>
     <div id="root" class="wrap">
       <!-- Home -->
+       <button type="button" class="test-button" style="padding: 20px; display: inline-block; background-color: gray;">버튼입니다!</button>
       <div class="content-wrapper">
         <div class="todo">
           <!-- START: Header 컴포넌트 -->
@@ -25,7 +26,7 @@
             <!-- START: Form컴포넌트 -->
             <section>
               <div class="form">
-                <form action="/create" method="post">
+                <form>
                   <div class="form-wrap">
                     <input
                       type="text"
@@ -42,8 +43,7 @@
             <!-- START: TodoList컴포넌트 -->
             <section>
               <ul class="todo__list">
-                <li class="todo__item">
-                  <!-- <div class='todo__content complete'> -->
+                <!-- <li class="todo__item">
                   <div class="todo__content">
                     <div class="todo__item-check">
                       <label>
@@ -61,7 +61,7 @@
                           class="todo__item-button-icon update far fa-edit"
                         ></i>
                       </a>
-                      <button type="button" class="todo__item-button">
+                      <button type="button" class="todo__item-button delete-btn">
                         <i
                           class="todo__item-button-icon delete far fa-times-circle"
                         ></i>
@@ -87,14 +87,14 @@
                           class="todo__item-button-icon update far fa-edit"
                         ></i>
                       </a>
-                      <button type="button" class="todo__item-button">
+                      <button type="button" class="todo__item-button delete-btn">
                         <i
                           class="todo__item-button-icon delete far fa-times-circle"
                         ></i>
                       </button>
                     </div>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </section>
             <!-- END: TodoList컴포넌트 -->
@@ -103,5 +103,6 @@
       </div>
       <!-- // Home -->
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
